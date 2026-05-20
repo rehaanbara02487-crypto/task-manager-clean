@@ -5,7 +5,7 @@ const path = require("path");
 const crypto = require("crypto");
 
 const app = express();
-const PORT = 5000;
+const PORT = process.env.PORT || 5000;
 const tasksFilePath = path.join(__dirname, "data", "tasks.json");
 const validPriorities = ["Low", "Medium", "High"];
 const validStatuses = ["To Do", "In Progress", "Done"];
