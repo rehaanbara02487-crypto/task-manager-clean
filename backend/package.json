@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "description": "Backend API for the Task Manager App",
   "main": "server.js",
-  "scripts": {
+ "engines": {
+  "node": "20.x"
+},
+ "scripts": {
     "start": "node server.js",
     "dev": "node server.js"
   },
